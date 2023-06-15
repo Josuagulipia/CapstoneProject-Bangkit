@@ -108,7 +108,7 @@ def get_filename(filename):
 
 if __name__ == '__main__':
     #serve(app, host="0.0.0.0", port=int(os.environ.get('PORT', 80)))
-    app.run(port=5000, debug=True, host='localhost', use_reloader=True)
-    print("Running on port 80")
-    #app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 80)))
+    #app.run(port=8080, debug=True, host='localhost', use_reloader=True)
+    #print("Running on port 80")
+    app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 8080)))
     #$Env:PORT=4000
