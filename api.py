@@ -12,7 +12,6 @@ import json
 import numpy as np
 import pandas as pd
 import base64
-from google.cloud import storage
 import urllib.request
 
 #init flask and sql
