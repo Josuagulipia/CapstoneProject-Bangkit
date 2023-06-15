@@ -24,7 +24,7 @@ app = Flask(__name__)
 #blob.download_to_filename('model.h5')
 model_url = 'https://storage.googleapis.com/healthy-teeth/model.h5'
 urllib.request.urlretrieve(model_url, 'model.h5')
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('model.h5', compile=False)
 CORS(app)
 mysql = init(app)
 
